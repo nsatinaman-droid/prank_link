@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #00ff00;
+    }
+}
+
+.progress-container {
+    width: 80%;
+    background-color: #444;
+    border-radius: 5px;
+    margin: 20px 0;
+    height: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #00ff00;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+.share-button {
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.share-button:hover {
+    background-color: #00cc00;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .share-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}

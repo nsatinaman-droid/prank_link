@@ -30,3 +30,4 @@ You can easily deploy this app using GitHub Pages or any static hosting service.
 
 ## Note
 This project is intended for harmless fun. Please use it responsibly and ensure that your friends are aware that it is a prank.
+update for github pages
